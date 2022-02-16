@@ -1,9 +1,8 @@
-
 version: '3.1'
 services:
   bookmedik:
     container_name: bookmedik
-    image: antoniocastro98/bookmedik:v1
+    image: antoniocastro98/bookmedik:v2
     restart: always
     environment:
       DATABASE_USER: bookmedik
@@ -27,3 +26,5 @@ services:
       - mariadb_data:/var/lib/mysql
 volumes:
     mariadb_data:
+
+
